@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Tag -->
+    <link rel="icon" type="image/png" href="img/Favicon.jpg">
+    <title>DEV-Desafios 1</title>
+    <meta name="description" content="">
+    <meta name="keywords" content=>
+    <meta name="author" content="joão pedro Cavalcante Scrivani">
+    <link rel="stylesheet" href="css/style.css">
+   
+    
+</head>
+
+<body>
+    
+    <h1>desafio 2 </h1>
+    <h2 id="resultado"></h2>
+   
+   <script>
+        let Numero1 = parseFloat (window.prompt ("Digite o seu numero da sorte "))
+        let Numero2 = parseFloat (window.prompt ("Digite o seu segundo numero da sorte "))
+        let operacao = window.prompt (" qual e a Ecuaçao + ou -")
+        let resultado = 0
+        if(operacao == "+") {
+            resultado = Numero1 + Numero2
+        }else {
+            resultado = Numero1 - Numero2
+        }
+
+
+        document.getElementById("resultado").innerText = "o resultado da soma: "  + resultado
+
+
+   </script>
+
+
+    
+</body>
+
+</html>
