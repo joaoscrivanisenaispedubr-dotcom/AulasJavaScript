@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Tag -->
+    <link rel="icon" type="image/png" href="img/Favicon.jpg">
+    <title>DEV-imagem dinamica  </title>
+    <meta name="description" content="">
+    <meta name="keywords" content=>
+    <meta name="author" content="joão pedro Cavalcante Scrivani">
+    <link rel="stylesheet" href="css/style.css">
+   
+    
+</head>
+
+<body>
+   <h1>Mudando imagem dinamicamente pelo javascript</h1>
+   <hr>
+   <div>
+        <p>Estamos aprendendo javascript</p>
+        <P>Mudando uma imagem dinamicamente</P>
+        <img id="imagem" src="../img/imagemm.jpg" alt="Imagem do hollow " title="imagem do hollow">
+        <button onclick="Mudarimg()"> Mudar Imagem </button>
+   </div>
+
+
+    <script>
+        function Mudarimg(){
+            var imagem = document.getElementById("imagem")
+            let imagem1 = "../img/imagemm.jpg"
+            let imagem2 = "../img/Hornet.jpg"
+
+            if(imagem.src.match(imagem1)){
+                imagem.src = imagem2
+            }else {
+                imagem.src= imagem1
+            } 
+        }
+    </script>
+    
+</body>
+
+</html>

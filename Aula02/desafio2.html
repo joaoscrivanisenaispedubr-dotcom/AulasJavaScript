@@ -6,27 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon Tag -->
     <link rel="icon" type="image/png" href="img/Favicon.jpg">
-    <title>DEV-Desenvolvimento de sistemas </title>
+    <title>DEV-imagem dinamica  </title>
     <meta name="description" content="">
     <meta name="keywords" content=>
     <meta name="author" content="joão pedro Cavalcante Scrivani">
     <link rel="stylesheet" href="css/style.css">
-    
+   
     
 </head>
 
 <body>
-     <h1> EXERCICIOS DE JS</h1>
-    <hr>
-    <ul>
-        <a href="Aula01/index.html">Aula 1 </a>
-        <hr>    
-        <a href="#">Aula 2 </a>
+   <h1>Mudando imagem dinamicamente pelo javascript</h1>
+   <hr>
+   <div>
+        <p>Estamos aprendendo javascript</p>
+        <P>Mudando uma imagem dinamicamente</P>
+        <img id="imagem" src="../img/imagemm.jpg" alt="Imagem do hollow " title="imagem do hollow">
+   </div>
+
+
+    <script>
+
+        let imagem = document.getElementById("imagem")
+        imagem.src ="../img/Hornet.jpg"
+        imagem.title="hornet"
         
-
-
-    </ul>
+    </script>
+    
 </body>
 
 </html>
-
