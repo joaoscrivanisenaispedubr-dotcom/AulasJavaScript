@@ -28,6 +28,15 @@
         console.log(resposta)
         document.write("seja bem vind0 "+ nome)
 
+        if(resposta==true){
+            setTimeout (() => {
+                window.open("index.html");
+
+            },3000); // 3000 milissegundos = 3 segunda 
+        }else{
+            window.confirm(nome + ", você vai continuar nessa pagina ")
+        }
+
 
    
    </script>
