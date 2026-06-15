@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Tag -->
+    <link rel="icon" type="image/png" href="img/Favicon.jpg">
+    <title>DEV-imagem dinamica  </title>
+    <meta name="description" content="">
+    <meta name="keywords" content=>
+    <meta name="author" content="joão pedro Cavalcante Scrivani">
+    <link rel="stylesheet" href="css/style.css">
+   
+    
+</head>
+
+<body>
+   <h1>Mudando imagem dinamicamente pelo javascript</h1>
+   <hr>
+   <div>
+        <p>Estamos aprendendo javascript</p>
+        <P>Mudando uma imagem dinamicamente</P>
+        <img id="imagem" src="../img/triste.jpg" alt="Imagem do hollow " title="imagem do hollow">
+        <input type="button" onclick="triste()" value="triste">
+        <input type="button" onclick="feliz()" value="feliz">  
+
+   </div>
+
+
+    <script>
+       function triste(){
+        let tag_triste =document.getElementById('imagem')
+        console.log(tag_triste)
+        tag_triste.src="../img/triste.jpg";
+       }
+       function feliz(){
+        let tag_feliz = document.getElementById('imagem')
+        console.log(tag_feliz)
+        tag_feliz.src="../img/feliz.jpg";
+       }
+    </script>
+    
+</body>
+
+</html>
