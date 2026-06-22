@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Tag -->
+    <link rel="icon" type="image/png" href="img/Favicon.jpg">
+    <title>DEV-imagem dinamica  </title>
+    <meta name="description" content="">
+    <meta name="keywords" content=>
+    <meta name="author" content="joão pedro Cavalcante Scrivani">
+   
+    
+</head>
+
+<body>
+   <h1>Mudando imagem dinamicamente pelo javascript</h1>
+   <hr>
+   <div>
+        <p>Estamos aprendendo javascript</p>
+        <P>Mudando uma imagem dinamicamente</P>
+        <img id="imagem" src="../img/triste.jpg" alt="Imagem do hollow " title="imagem do hollow">
+        <input type="number" id="num1" placeholder="Digite o Primeiro valor ">
+        <input type="number" id="num2" placeholder="Digite o segundo numero ">
+        <button onclick="somar()">somar</button>
+        <h2 id="resultado"></h2>
+    </div>
+
+
+    <script>
+        function somar(){
+        let valor1 = Number(document.getElementById('num1').value);
+        let valor2 = Number(document.getElementById('num2').value);
+        
+        let soma = valor1 + valor2;
+
+        document.getElementById('resultado').innerText = "Resultado: " + soma;
+
+       }
+       
+    </script>
+    
+</body>
+
+</html>
